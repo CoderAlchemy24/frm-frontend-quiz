@@ -10,7 +10,7 @@ function Score({title,icon, score, onRestart}){
           
            <header className='app-header'>
             <div className="quiz-header-left">
-              <img src={icon} />
+              <img src={icon} alt="subject-icon"/>
               <h2>{title}</h2>
             </div>
             <ThemeSwitcher />
@@ -23,7 +23,7 @@ function Score({title,icon, score, onRestart}){
             <section className="section-right"> 
               <div className="score-content">
                   <div className="quiz-header-center">
-                    <img src={icon} />
+                    <img src={icon} alt="subject-icon"/>
                     <h2>{title}</h2>
                   </div>
                   <div className="score-table">
