@@ -540,12 +540,12 @@ button{
   justify-self: flex-end;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 48rem){
   
  
   .main{
     @include flex-container(column, center, center);
-    height:240px;
+    height: 240px;
     
   }
 
