@@ -148,7 +148,7 @@ section{
 }
 
 .quiz-main-content{
-  @include flex-container(row, space-around, space-between);
+  @include flex-container(row, space-around, center);
   background-color: transparent;
   gap: 3rem;
   width: calc( 100% - 3rem *2);
