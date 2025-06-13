@@ -67,11 +67,11 @@ return (
           <ThemeSwitcher /> 
         </header>
         <main className="main">
-          <section className='section-left'>
+          <section className='home-section-left'>
             <h1>Welcome to the <br /><span>Frontend Quiz!</span></h1>
             <p>Pick a subject to get started.</p>
           </section>
-          <section className="section-right">
+          <section className="home-section-right">
             <div className='subject-list'>
               {subjects.map((subject, idx) => (
                   <Subject

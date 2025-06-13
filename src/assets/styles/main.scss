@@ -66,28 +66,28 @@ section{
   padding: 0;
 
 }
-.section-left{
+.home-section-left{
   width: 48%;
 }
 
-.section-right{
+.home-section-right{
   width: 42%;
 }
 
-.section-left h1{
+.home-section-left h1{
     @include text-preset-2-light;
     color: var(--text);
     text-align: left;
     margin: 0 auto;
 }
 
-.section-left h1 span{
+.home-section-left h1 span{
   @include text-preset-2-medium;
   color: var(--text);
     text-align: left;
 }
 
-.section-left p{
+.home-section-left p{
   @include text-preset-6-italic;
   color: var(--text);
     text-align: left;
@@ -550,13 +550,13 @@ button{
   }
 
   section{
-    width: 96%;
+    width: 100%;
   }
 
-  .section-left,
-  .section-right{
-    width: 96%;
-    height: 100px;
+  .home-section-left,
+  .home-section-right{
+    width: 100%;
+    height: auto;
   }
 
    .quiz-header{
@@ -580,23 +580,24 @@ button{
 
   /* fonts, margin padding mobile-screen*/
 
-  .section-left h1{
+  .home-section-left h1{
     @include text-preset-2-light-mobile;
     padding: 0;
     margin:0;
+    margin-bottom: 1rem;
    
 }
 
-.section-left h1 span{
+.home-section-left h1 span{
   @include text-preset-2-mobile;
-  margin: 0 auto;
-  padding: 0%;
+  margin: 0 auto 1rem;
+  padding-bottom:1rem;
  
 }
 
-.section-left p{
+.home-section-left p{
   @include text-preset-5-mobile;
-  margin: 0 auto 0 0.2rem;  
+  margin: 1rem auto 0.5rem 0.2rem;  
   text-align: left;
 }
 

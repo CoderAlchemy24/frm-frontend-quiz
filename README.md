@@ -46,7 +46,6 @@ Users should be able to:
 - Solution URL: [https://github.com/CoderAlchemy24/frm-frontend-quiz.git](https://github.com/CoderAlchemy24/frm-frontend-quiz.git)
 - Live Site URL: [https://dynamic-eclair-0ce8e3.netlify.app/](https://dynamic-eclair-0ce8e3.netlify.app/)
 
-## My process
 
 ### Built with
 
