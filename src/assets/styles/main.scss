@@ -551,12 +551,13 @@ button{
 
   section{
     width: 100%;
+
   }
 
   .home-section-left,
   .home-section-right{
     width: 100%;
-    height: auto;
+    
   }
 
    .quiz-header{
@@ -583,14 +584,14 @@ button{
   .home-section-left h1{
     @include text-preset-2-light-mobile;
     padding: 0;
-    margin:0;
-    margin-bottom: 1rem;
+  
+    margin: 8rem 0 1rem;
    
 }
 
 .home-section-left h1 span{
   @include text-preset-2-mobile;
-  margin: 0 auto 1rem;
+  margin: 8rem 0 1rem;
   padding-bottom:1rem;
  
 }
