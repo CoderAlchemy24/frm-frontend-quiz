@@ -1,15 +1,10 @@
-
-
-
-
-function Subject({title, icon,  onClick }){
-
-    return (
+function Subject({ title, icon, onClick }) {
+  return (
     <div className="subject-container" onClick={onClick}>
-      <img src={icon} alt="subject-icon"/>
+      <img src={icon} alt="subject-icon" />
       <h2 className="subject-h2">{title}</h2>
-    </div>)
-
+    </div>
+  );
 }
 
-export default Subject
+export default Subject;

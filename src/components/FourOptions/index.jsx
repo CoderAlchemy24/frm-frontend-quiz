@@ -1,8 +1,6 @@
 import QuizOption from "../QuizOption";
 
-
 function FourOptions({ question, selectedIndex, isSubmitted, onSelect }) {
-
   const handleOptionClick = (idx) => {
     if (!isSubmitted && onSelect) onSelect(idx);
   };
@@ -10,19 +8,20 @@ function FourOptions({ question, selectedIndex, isSubmitted, onSelect }) {
   return (
     <>
       {question.options.map((option, idx) => {
-        let optionClass = 'option';
+        let optionClass = "option";
         if (selectedIndex === idx && !isSubmitted) {
-          optionClass += ' option-selected';
+          optionClass += " option-selected";
         }
         if (isSubmitted) {
           if (idx === selectedIndex) {
-            optionClass += question.options[idx] === question.answer
-              ? ' option-correct'
-              : ' option-incorrect';
+            optionClass +=
+              question.options[idx] === question.answer
+                ? " option-correct"
+                : " option-incorrect";
           } else if (question.options[idx] === question.answer) {
-            optionClass += ' option-correct';
+            optionClass += " option-correct";
           } else {
-            optionClass += ' option';
+            optionClass += " option";
           }
         }
         return (

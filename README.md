@@ -1,6 +1,6 @@
 # Frontend Mentor - Frontend quiz app solution
 
-This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -9,12 +9,11 @@ This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
- 
+
 - [Author](#author)
-
-
 
 ## Overview
 
@@ -40,22 +39,16 @@ Users should be able to:
 
 ![./desktop_screenshot_dark.png](./desktop_screenshot_dark.png)
 
-
 ### Links
 
 - Solution URL: [https://github.com/CoderAlchemy24/frm-frontend-quiz.git](https://github.com/CoderAlchemy24/frm-frontend-quiz.git)
 - Live Site URL: [https://dynamic-eclair-0ce8e3.netlify.app/](https://dynamic-eclair-0ce8e3.netlify.app/)
-
 
 ### Built with
 
 - [React](https://reactjs.org/) - JS library
 - Sass/scss
 
-
-
 ## Author
 
 - Author - [coderAlchemy24](https://github.com/CoderAlchemy24/frm-frontend-quiz.git)
-
-
