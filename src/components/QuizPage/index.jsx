@@ -65,7 +65,7 @@ function QuizPage({ quiz, icon, onRestart }) {
     <div>
       <header className="quiz-header">
         <div className="quiz-header-left">
-          <img src={icon} alt="subject-icon" />
+          <img src={icon} alt={`${quiz.title}-icon`}  />
           <h2>{quiz.title}</h2>
         </div>
         <ThemeSwitcher />
