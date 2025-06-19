@@ -35,7 +35,17 @@ function ThemeSwitcher() {
         )}
       </span>
 
-      <div className="switch-btn-outer" onClick={toggleTheme}>
+      <div className="switch-btn-outer" 
+           onClick={toggleTheme}
+           role="switch"
+           aria-checked={theme === "dark"}
+           aria-label={theme === "dark" ? "Dark-mode on" : "Light-mode on"}
+  
+           tabIndex={0}
+           onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") toggleTheme();
+            
+            }}>
         {theme === "light" ? (
           <div className="switch-btn-left-circle"></div>
         ) : (

@@ -27,7 +27,12 @@ function Score({ title, icon, score, onRestart }) {
               <p>out of 10</p>
             </div>
           </div>
-          <button onClick={onRestart}>Restart Quiz</button>
+          <button onClick={onRestart} 
+                  tabIndex={0}
+                  onKeyDown={e => {
+                     if (e.key === "Enter" || e.key === " ") onRestart();
+                   }}
+                  >Restart Quiz</button>
         </section>
       </main>
     </div>

@@ -8,7 +8,15 @@ function QuizOption({ question, optionIndex, onOptionClick, optionClass }) {
   };
 
   return (
-    <div className={optionClass} idx={optionIndex} onClick={clickHandler}>
+    <div 
+      className={optionClass} 
+      role="button"
+      tabIndex={0}
+      idx={optionIndex} 
+      onKeyDown={e => {
+        if (e.key === "Enter" || e.key === " ") onOptionClick();
+      }}
+      onClick={clickHandler}>
       <p className="option-text">
         <span className="option-letter"> {letters[optionIndex]} </span>
         {question.options[optionIndex]}

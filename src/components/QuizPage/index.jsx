@@ -82,10 +82,14 @@ function QuizPage({ quiz, icon, onRestart }) {
             selectedIndex={selectedOption}
             isSubmitted={isSubmitted}
             onSelect={handleOptionSelect}
+            
           />
           {!isSubmitted ? (
             <button
               onClick={handleSubmit}
+              tabIndex={0}
+              onKeyDown={(e)=> {  if (e.key === "Enter" || e.key === " ") handleSubmit;}}
+             
               disabled={selectedOption === null}
               className={
                 selectedOption === null
@@ -97,7 +101,12 @@ function QuizPage({ quiz, icon, onRestart }) {
             </button>
           ) : (
             index < quiz.questions.length - 1 && (
-              <button onClick={handleNext} className={"button-unsubmitted"}>
+              <button 
+                onClick={handleNext} 
+                className={"button-unsubmitted"}
+                tabIndex={0}
+                onKeyDown={(e)=> {  if (e.key === "Enter" || e.key === " ") handleNext;}}
+                >
                 Next Question
               </button>
             )

@@ -67,13 +67,15 @@ function App() {
               <p>Pick a subject to get started.</p>
             </section>
             <section className="home-section-right">
-              <div className="subject-list">
+              <div className="subject-list" >
                 {subjects.map((subject, idx) => (
                   <Subject
                     key={subject.title}
                     title={subject.title}
                     icon={subject.icon}
                     onClick={() => handleSubjectSelect(idx)}
+                    tabIndex={0}
+                    onKeyDown={(e)=> {  if (e.key === "Enter" || e.key === " ") handleSubjectSelect(idx)}}
                   />
                 ))}
               </div>

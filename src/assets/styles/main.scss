@@ -2,6 +2,11 @@
 @use "./fonts";
 @use "./mixins" as *;
 
+:focus-visible {
+  outline: 2px solid lightseagreen;
+  outline-offset: 2px;
+}
+
 body[data-theme="light"] {
   --bg: #f4f6fa;
   --bg-2: #ffffff;
@@ -13,7 +18,7 @@ body[data-theme="light"] {
   background-size: cover;
   background-position-y: -120px;
 
-  /* ... */
+  
 }
 body[data-theme="dark"] {
   --bg: #313e5e;
@@ -24,7 +29,7 @@ body[data-theme="dark"] {
   background-image: url("../images/pattern-background-desktop-dark.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* ... */
+  
 }
 
 body {
@@ -50,9 +55,9 @@ body {
 .main {
   @include flex-container(row, space-around, flex-start);
 
-  gap: 6%;
-  width: calc(100% - 3rem * 2);
-  margin: 1rem 0 3rem 3rem;
+  gap:4rem;
+  width: calc(100% - 2.5rem * 2);
+  margin: 1rem 1.075rem 3rem 3rem;
 }
 
 section {
@@ -62,6 +67,7 @@ section {
 }
 .home-section-left {
   width: 48%;
+ 
 }
 
 .home-section-right {
@@ -491,9 +497,15 @@ button {
 }
 
 @media screen and (max-width: 48rem) {
+  
+  .switcher{
+    margin: 3.5rem 2rem 4rem;
+  }
+
   .main {
     @include flex-container(column, center, center);
-    height: 240px;
+    height: 15rem;
+    margin-top:3rem;
   }
 
   section {
@@ -507,7 +519,9 @@ button {
 
   .quiz-header {
     @include flex-container(row, space-between, center);
-    width: 98%;
+    width: 100%;
+    
+    
   }
 
   .quiz-main-content {
@@ -556,9 +570,12 @@ button {
   .quiz-header {
     margin: 0;
     padding: 0;
+    @include flex-container(row, space-between, center);
+    
   }
 
   .quiz-header-left h2 {
+    @include flex-container(row, flex-start, center);
     @include text-preset-3-mobile;
   }
 
@@ -591,9 +608,11 @@ button {
   .score-page header {
     margin: 0 0 0.5rem;
     width: 100%;
+    @include flex-container(row, space-between, center);
   }
   .quiz-header-left h2 {
     @include text-preset-3-mobile;
+    @include flex-container(row, flex-start, center);
   }
   .score-page main {
     @include flex-container(column, space-evenly, center);
