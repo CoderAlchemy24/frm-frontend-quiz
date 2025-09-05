@@ -477,7 +477,7 @@ button {
 .bar {
   height: 10px;
   width: 98%;
-  background-color: lightgray;
+  background-color: lightpink;
   border-radius: 4px;
   margin: 0 auto 5rem;
   justify-self: flex-end;
@@ -485,7 +485,7 @@ button {
 
 .progress {
   height: 5px;
-
+  background-color: lightgray;
   margin: 0;
   border-radius: 4px;
   padding: 2px 4px;
@@ -493,7 +493,7 @@ button {
   top: 1px;
   left: 2px;
 
-  justify-self: flex-end;
+  justify-self: flex-start;
 }
 
 @media screen and (max-width: 48rem) {

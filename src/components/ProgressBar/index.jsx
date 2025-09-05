@@ -1,5 +1,5 @@
 function ProgressBar({ current }) {
-  const percent = Math.round((current + 1) * 9.7);
+  const percent = Math.round((current) * 9.8);
 
   return (
     <div className="bar">
@@ -9,6 +9,7 @@ function ProgressBar({ current }) {
           width: `${percent}%`,
           height: "3px",
           backgroundColor: "purple",
+          
         }}
       ></div>
     </div>

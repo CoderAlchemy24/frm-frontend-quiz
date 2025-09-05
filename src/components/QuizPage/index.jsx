@@ -100,7 +100,7 @@ function QuizPage({ quiz, icon, onRestart }) {
               Submit Answer
             </button>
           ) : (
-            index < quiz.questions.length - 1 && (
+            index < quiz.questions.length  && (
               <button 
                 onClick={handleNext} 
                 className={"button-unsubmitted"}
